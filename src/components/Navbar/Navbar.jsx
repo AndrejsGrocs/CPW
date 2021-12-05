@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <nav className='nav'>
             <div>
-              Router Demo Page
+              CPW Food Health App
          </div>
          <ul className='nav-list'>
              <li> <NavLink to='/' exact activeClassName='active'>Landing</NavLink></li>
