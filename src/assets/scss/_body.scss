@@ -4,9 +4,26 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(130, 221, 70);
+  color: rgb(238, 238, 238);
 }
 
-.image-block {
-  border: 3px solid black;
+.landing-text {
+  color: white;
+  margin-bottom: 10%;
+}
+
+.banner {
+  color: white;
+  border: 2px solid white;
+  border-radius: 20%;
+  height: 30vh;
+  margin-bottom: 10%;
+}
+
+.input {
+  margin-bottom: 10%;
+  margin-top: 10%;
+  width: 60%;
+  height: 5vh;
 }

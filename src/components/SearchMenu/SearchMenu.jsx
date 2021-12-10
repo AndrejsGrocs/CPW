@@ -4,7 +4,7 @@ export default function SearchMenu() {
     return (
         <div>
         <form>
-            <label htmlFor="vegan">Vegan</label>
+           {/*  <label htmlFor="vegan">Vegan</label>
              <input type="radio" name="type" id="episode"
                 
                  value = "episode"
@@ -22,9 +22,9 @@ export default function SearchMenu() {
              <input type="radio" name="type" id="episode"
                 
                  value = "episode"
-                 />
-
-                <input type="text" id="search" placeholder="example: Enter your food"
+                 /> */}
+                  <h2>Enter your Product Name </h2>
+                <input className='input' type="text" id="search" placeholder="example: Enter your food"
                 
             />
 
