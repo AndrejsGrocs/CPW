@@ -6,7 +6,7 @@ import SearchMenu from '../../components/SearchMenu/SearchMenu'
 export default function Landing() {
     return (
         <div className='sectionContainer'>
-            <h1 className="landing-text">CPW Food App </h1>
+            <h1 className="landing-text">Ananapp Pineapp Nutrify </h1>
             <Banner />
             <SearchMenu />
             <Card />

@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../assets/images/Nutrition_Ampel/A.png'
+import pic from '../../assets/images/Nutrition_Ampel/B.png'
 
 export default function Card() {
     return (
