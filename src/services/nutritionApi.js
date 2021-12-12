@@ -1,15 +1,16 @@
 import React from 'react';
-import axios from 'axios';
-import env from 'react-dotenv';
+require('dotenv').config();
 
 function nutritionApi() {
+  const axios = require('axios').default;
+
   const options = {
     method: 'GET',
-    url: 'https://edamam-food-and-grocery-database.p.rapidapi.com/parser',
-    params: { ingr: 'apple' },
+    url: 'https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data',
+    params: { ingr: '1 large apple' },
     headers: {
-      'x-rapidapi-host': 'edamam-food-and-grocery-database.p.rapidapi.com',
-      'x-rapidapi-key': `${window.env.API_KEY}`,
+      'x-rapidapi-host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
+      'x-rapidapi-key': `${process.env.API_KEY}`,
     },
   };
 
@@ -22,11 +23,7 @@ function nutritionApi() {
       console.error(error);
     });
 
-  return (
-    <div>
-      <h1></h1>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default nutritionApi;
