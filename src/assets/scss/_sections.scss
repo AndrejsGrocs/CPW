@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .sectionContainer {
   width: 100%;
-  margin: 10rem auto;
-  padding: 10rem 30rem;
+  // margin: 10rem auto;
+  // padding: 10rem 30rem;
   font-size: 4rem;
   text-align: center;
-  color: rgb(255, 255, 255);
+  // color: rgb(255, 255, 255);
+
+  font-family: "Roboto", sans-serif;
+  // font-size: 1.6rem;
+
+  background-color: rgb(130, 221, 70);
+  color: rgb(238, 238, 238);
 }
