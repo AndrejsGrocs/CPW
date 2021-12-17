@@ -1,7 +1,7 @@
 import React from 'react';
 require('dotenv').config();
 
-function nutritionApi() {
+async function nutritionApi() {
   const axios = require('axios').default;
 
   const options = {
@@ -10,23 +10,21 @@ function nutritionApi() {
     params: { ingr: '1 large apple' },
     headers: {
       'x-rapidapi-host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
-      // 'x-rapidapi-key': `${process.env.API_KEY}`,
-      'x-rapidapi-key': `be3edc6362msh395de5136f1c125p1e9d79jsn0e94ebe79825`,
+      'x-rapidapi-key': '7a62647930msh79885bfe25a16e7p11a920jsnd823b45480ce',
     },
   };
 
-  axios
-    .request(options)
-    .then(function (response) {
-      console.log(response.data.calories);
+  console.log(options);
 
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
+  const response = await axios.request(options);
+  return response.data;
 
-  return <div></div>;
-
+  //* We want to use this in the nutrotius-facts component
+  // return (
+  //   <div>
+  //     <p>{options.calories}</p>
+  //   </div>
+  // );
 }
 
 export default nutritionApi;
