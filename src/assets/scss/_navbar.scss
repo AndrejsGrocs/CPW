@@ -5,9 +5,10 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: rgb(46, 131, 134);
+  background-color: rgb(39, 167, 172);
   align-items: center;
-  color: white;
+  color: #f2f55e;
+  z-index: 1000;
 }
 
 .nav-list {
@@ -19,7 +20,7 @@
 
   li a {
     text-decoration: none;
-    color: white;
+    color: #f2f55e;
   }
 
   .active {
