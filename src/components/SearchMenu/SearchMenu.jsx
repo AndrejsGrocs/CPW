@@ -1,37 +1,49 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
+import { getUnsplashData } from '../../services/apiServices';
 
-export default function SearchMenu() {
-    return (
-        <div>
-        <form>
-           {/*  <label htmlFor="vegan">Vegan</label>
-             <input type="radio" name="type" id="episode"
-                
-                 value = "episode"
-                 />
+export default function SearchMenu({ image, setImage, setImageData }) {
+  const getImageData = async (image) => {
+    try {
+      const data = await getUnsplashData(image);
+      console.log('Data from my getImageDate-Function', data);
+      setImageData(data);
+    } catch (error) {
+      console.log("Can't get no Data from unplsplash-API", error.message);
+    }
+  };
 
+  //*********************************************** */
+  const onChangeImage = (e) => {
+    console.log('e.target.value console-log', e.target.value);
+    return setImage(e.target.value);
+  };
 
-                 <label htmlFor="vegetarian">Vegetarian</label>
-             <input type="radio" name="type" id="episode"
-                
-                 value = "episode"
-                 />
+  //*********************************************** */
+  const onClickButton = (e) => {
+    setImage();
+    getImageData(image);
+  };
+  //*********************************************** */
 
+  const onSubmitHandle = (e) => {
+    e.preventDefault();
+    console.log(image);
+  };
 
-                 <label htmlFor="flexi">Flexi</label>
-             <input type="radio" name="type" id="episode"
-                
-                 value = "episode"
-                 /> */}
-                  <h2>Enter your Product Name </h2>
-                <input className='input' type="text" id="search" placeholder="example: Enter your food"
-                
-            />
+  return (
+    <div>
+      <form onSubmit={onSubmitHandle}>
+        <h2>Enter your Product Name </h2>
+        <input
+          className="input"
+          type="text"
+          id="search"
+          placeholder="example: Enter your food"
+          onChange={onChangeImage}
+        />
 
-
-              <button type="submit">Submit </button>
-
-        </form>
-        </div>
-    )
+        <button onClick={onClickButton}>Submit</button>
+      </form>
+    </div>
+  );
 }
