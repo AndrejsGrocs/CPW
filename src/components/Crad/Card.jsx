@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { render } from 'sass'
 import pic from '../../assets/images/Nutrition_Ampel/B.png'
+import NutritionFacts from '../NutritionFacts/NutritionFacts'
+
+
+
+
 
 export default function Card() {
+     console.log('Call component')
+    const [show, setShow] = useState(false)
     return (
         <div>
             <figure className="image-block">
@@ -12,7 +20,15 @@ export default function Card() {
                      <h3>Pineapples health rating is:</h3>
                     <img className='rating-image' src={pic}/>
                     <br/>
-                   <button>More info ...</button>
+                   <button  onClick={()=>setShow(!show)}>See More Data</button>
+                    {show ? <NutritionFacts/> : null}
+                   <div>
+                       
+
+
+
+
+                   </div>
                </figcaption>
             </figure>
         </div>

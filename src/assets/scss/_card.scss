@@ -1,6 +1,9 @@
 .card-image {
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 25%;
   height: 30%;
+  border: 3px solid white;
   border-radius: 10%;
 }
 
@@ -16,7 +19,17 @@
 }
 
 .rating-image {
-  margin-top: 10%;
+  margin-top: 30px;
   width: 35%;
   height: 40%;
+}
+
+.nutrition-facts {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.info-button {
+  margin-top: 30px;
+  background-color: white;
 }
