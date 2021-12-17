@@ -1,7 +1,7 @@
 import React from 'react';
 import pic from '../../assets/images/Nutrition_Ampel/B.png';
 import NutritionApi from '../../services/NutritionApi';
-import NutritionFacts from '../NutritionFacts/NutrtionFacts';
+import NutritionFacts from '../NutritionFacts/NutritionFacts';
 
 export default function Card({ imageData }) {
   return (
