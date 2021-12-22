@@ -1,9 +1,11 @@
 import React from 'react';
-import pic from '../../assets/images/Nutrition_Ampel/B.png';
+import picA from '../../assets/images/Nutrition_Ampel/A.png';
+import picB from '../../assets/images/Nutrition_Ampel/B.png';
 import NutritionApi from '../../services/NutritionApi';
 import NutritionFacts from '../NutritionFacts/NutritionFacts';
+import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
-export default function Card({ imageData }) {
+export default function Card({ imageData, facts, setFacts }) {
   return (
     <div>
       <figure className="image-block">
@@ -23,11 +25,10 @@ export default function Card({ imageData }) {
 
         <figcaption>
           <h3>Pineapples health rating is:</h3>
-          <img className="rating-image" src={pic} />
-
+          <NutritiousAmpel facts={facts} setFacts={setFacts} />
           <br />
           <button>More info ...</button>
-          <NutritionFacts />
+          <NutritionFacts facts={facts} setFacts={setFacts} />
         </figcaption>
       </figure>
     </div>

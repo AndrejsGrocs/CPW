@@ -1,10 +1,8 @@
-import { cloneDeepWith } from 'lodash';
 import React, { useState, useEffect } from 'react';
 import nutritionApi from '../../services/NutritionApi';
+import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
-export default function NutritionFacts() {
-  const [facts, setFacts] = useState(null);
-
+export default function NutritionFacts({ facts, setFacts }) {
   const getNutritionData = async () => {
     const data = await nutritionApi();
     setFacts(data);
@@ -15,11 +13,6 @@ export default function NutritionFacts() {
   useEffect(() => {
     getNutritionData();
   }, []);
-
-  // console.log(
-  //   'hello my round function',
-  //   Math.round(facts.totalNutrients.FAT.quantity)
-  // );
 
   return (
     <div>
@@ -33,18 +26,26 @@ export default function NutritionFacts() {
             <li>{facts.healthLabels[0]}</li>
             <li>{facts.healthLabels[4]}</li>
             <li>
-              {facts.totalNutrients.FAT.label}:
-              {facts.totalNutrients.FAT.quantity}
+              <h3>Fat:</h3>
+              <p>
+                {facts.totalNutrients.FAT.quantity.toFixed(2)}
+                {facts.totalNutrients.FAT.unit}
+              </p>
             </li>
             <li>
-              {facts.totalNutrients.SUGAR.label}:
-              {facts.totalNutrients.SUGAR.quantity}
+              <h3>Sugar:</h3>
+              <p>
+                {facts.totalNutrients.SUGAR.quantity.toFixed(2)}
+                {facts.totalNutrients.SUGAR.unit}
+              </p>
             </li>
             <li>
-              {facts.totalNutrients.PROCNT.label}:
+              <h3>Proteine:</h3>
               {facts.totalNutrients.PROCNT.quantity}
+              {facts.totalNutrients.FAT.unit}
             </li>
           </ul>
+          <NutritiousAmpel facts={facts} setFact={setFacts} />
         </>
       )}
     </div>

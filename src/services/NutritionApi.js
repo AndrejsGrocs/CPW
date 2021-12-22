@@ -10,11 +10,11 @@ async function nutritionApi() {
     params: { ingr: '1 large apple' },
     headers: {
       'x-rapidapi-host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
-      'x-rapidapi-key': '7a62647930msh79885bfe25a16e7p11a920jsnd823b45480ce',
+      'x-rapidapi-key': 'be3edc6362msh395de5136f1c125p1e9d79jsn0e94ebe79825',
     },
   };
 
-  console.log(options);
+  console.log('my options from NutritionApi', options);
 
   const response = await axios.request(options);
   return response.data;
