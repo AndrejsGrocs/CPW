@@ -9,10 +9,10 @@ export default function BTeamCards() {
     <section>
       <div class="row">
         <h1 class="text-center">
-          <span>🌶️ Chilly Productive Workee Team</span>
+          <span>🌶️ Chilly Productive Workee Team 🍍</span>
         </h1>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-end">
           <div class="card profile-card-1">
             <img
               src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
@@ -59,7 +59,7 @@ export default function BTeamCards() {
         </div>
 
         {/* <!--Profile Card 3--> */}
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-center">
           <div class="card profile-card-3">
             <div class="background-block">
               <img
@@ -108,7 +108,7 @@ export default function BTeamCards() {
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-start">
           <div class="card profile-card-1">
             <img
               src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
@@ -153,7 +153,8 @@ export default function BTeamCards() {
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+
+        <div class="col-md-4 d-flex justify-content-end">
           <div class="card profile-card-3">
             <div class="background-block">
               <img
@@ -203,7 +204,7 @@ export default function BTeamCards() {
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-center">
           <div class="card profile-card-1">
             <img
               src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
@@ -248,7 +249,7 @@ export default function BTeamCards() {
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-flex justify-content-start">
           <div class="card profile-card-3">
             <div class="background-block">
               <img
