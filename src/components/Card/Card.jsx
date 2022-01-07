@@ -1,17 +1,19 @@
 import React from 'react';
-import pic from '../../assets/images/Nutrition_Ampel/B.png';
+import picA from '../../assets/images/Nutrition_Ampel/A.png';
+import picB from '../../assets/images/Nutrition_Ampel/B.png';
 import NutritionApi from '../../services/NutritionApi';
 import NutritionFacts from '../NutritionFacts/NutritionFacts';
+import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
-export default function Card({ imageData }) {
+export default function Card({ imageData, facts, setFacts }) {
   return (
     <div>
       <figure className="image-block">
         <h3>Your Product is Pineapple</h3>
-        <img
+        {/* <img
           className="card-image"
           src="https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg"
-        />
+        /> */}
         <img
           className="card-image"
           src={
@@ -23,11 +25,10 @@ export default function Card({ imageData }) {
 
         <figcaption>
           <h3>Pineapples health rating is:</h3>
-          <img className="rating-image" src={pic} />
 
           <br />
           <button>More info ...</button>
-          <NutritionFacts />
+          <NutritionFacts facts={facts} setFacts={setFacts} />
         </figcaption>
       </figure>
     </div>

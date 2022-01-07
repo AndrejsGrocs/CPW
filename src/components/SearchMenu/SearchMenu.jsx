@@ -1,7 +1,13 @@
 import { useState, useEffect } from 'react';
 import { getUnsplashData } from '../../services/apiServices';
+import nutritionApi from '../../services/NutritionApi';
 
-export default function SearchMenu({ image, setImage, setImageData }) {
+export default function SearchMenu({
+  image,
+  setImage,
+  setImageData,
+  setFacts,
+}) {
   const getImageData = async (image) => {
     try {
       const data = await getUnsplashData(image);
@@ -19,10 +25,13 @@ export default function SearchMenu({ image, setImage, setImageData }) {
   };
 
   //*********************************************** */
-  const onClickButton = (e) => {
+  const onClickButton = async (e) => {
     setImage();
     getImageData(image);
+    const result = await nutritionApi(image);
+    setFacts(result);
   };
+
   //*********************************************** */
 
   const onSubmitHandle = (e) => {

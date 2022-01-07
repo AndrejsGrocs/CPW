@@ -6,6 +6,7 @@ import SearchMenu from '../../components/SearchMenu/SearchMenu';
 export default function Landing() {
   const [image, setImage] = useState('');
   const [imageData, setImageData] = useState();
+  const [facts, setFacts] = useState(null);
 
   //****************************************** */
 
@@ -18,9 +19,10 @@ export default function Landing() {
         image={image}
         setImage={setImage}
         setImageData={setImageData}
+        setFacts={setFacts}
       />
 
-      <Card imageData={imageData} />
+      <Card imageData={imageData} facts={facts} setFacts={setFacts} />
       <h2></h2>
       <h3></h3>
     </div>
