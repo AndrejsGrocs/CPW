@@ -47,7 +47,7 @@ export default function SearchMenu({
           className="input"
           type="text"
           id="search"
-          placeholder="example: Enter your food"
+          placeholder="example: Search for 1 Apple"
           onChange={onChangeImage}
         />
 
