@@ -19,6 +19,7 @@ export default function Landing() {
         image={image}
         setImage={setImage}
         setImageData={setImageData}
+        setFacts={setFacts}
       />
 
       <Card imageData={imageData} facts={facts} setFacts={setFacts} />

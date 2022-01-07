@@ -10,13 +10,13 @@ export default function NutritionFacts({ facts, setFacts }) {
   };
 
   //* we need this useEffect one to load the data - it is called everytime a component renders
-  useEffect(() => {
-    getNutritionData();
-  }, []);
+  // useEffect(() => {
+  //   getNutritionData();
+  // }, []);
 
   return (
     <div>
-      {facts === null ? null : (
+      {!facts ? null : (
         <>
           <ul className="nutrition-facts">
             <li>{facts.totalWeight}</li>

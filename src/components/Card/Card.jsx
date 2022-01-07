@@ -10,10 +10,10 @@ export default function Card({ imageData, facts, setFacts }) {
     <div>
       <figure className="image-block">
         <h3>Your Product is Pineapple</h3>
-        <img
+        {/* <img
           className="card-image"
           src="https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg"
-        />
+        /> */}
         <img
           className="card-image"
           src={
@@ -25,7 +25,7 @@ export default function Card({ imageData, facts, setFacts }) {
 
         <figcaption>
           <h3>Pineapples health rating is:</h3>
-          <NutritiousAmpel facts={facts} setFacts={setFacts} />
+
           <br />
           <button>More info ...</button>
           <NutritionFacts facts={facts} setFacts={setFacts} />
