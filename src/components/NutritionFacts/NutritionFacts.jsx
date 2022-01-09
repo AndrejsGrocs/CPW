@@ -2,6 +2,17 @@ import React, { useState, useEffect } from 'react';
 import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
 export default function NutritionFacts({ facts, setFacts }) {
+  const getNutritionData = async () => {
+    const data = await nutritionApi();
+    setFacts(data);
+    console.log('this is from getNutritionData', data);
+  };
+
+  //* we need this useEffect one to load the data - it is called everytime a component renders
+  // useEffect(() => {
+  //   getNutritionData();
+  // }, []);
+
   return (
     <div id='nFacts'>
       {!facts ? null : (
