@@ -42,7 +42,7 @@ export default function SearchMenu({
   return (
     <div>
       <form onSubmit={onSubmitHandle}>
-        <h2>Enter your Product Name </h2>
+        <h2>Enter your Product {setImage} </h2>
         <input
           className="input"
           type="text"

@@ -6,7 +6,7 @@ export default function NutritionFacts({ facts, setFacts }) {
   const getNutritionData = async () => {
     const data = await nutritionApi();
     setFacts(data);
-    console.log(data);
+    console.log('this is from getNutritionData', data);
   };
 
   //* we need this useEffect one to load the data - it is called everytime a component renders

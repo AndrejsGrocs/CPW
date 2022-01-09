@@ -8,12 +8,15 @@ import nutritionApi from '../../services/NutritionApi';
 export default function NutritiousAmpel({ facts, setFacts }) {
   const nutriAmpFunction = () => {
     console.log(facts);
-    if (facts.calories < 300) {
+    if (facts.calories <= 150) {
       return picA;
     }
-    // if (facts.calories > 114) {
-    //   return picB;
-    // }
+    if (facts.calories <= 250) {
+      return picB;
+    }
+    if (facts.calories > 250) {
+      return picC;
+    }
   };
 
   // useEffect(() => {

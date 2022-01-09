@@ -5,11 +5,11 @@ import NutritionApi from '../../services/NutritionApi';
 import NutritionFacts from '../NutritionFacts/NutritionFacts';
 import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
-export default function Card({ imageData, facts, setFacts, setImage }) {
+export default function Card({ imageData, facts, setFacts }) {
   return (
     <div>
       <figure className="image-block">
-        <h3>Your Product is "Apple"</h3>
+        <h3>Your Product is</h3>
         {/* <img
           className="card-image"
           src="https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg"
