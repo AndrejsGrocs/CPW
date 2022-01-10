@@ -7,6 +7,7 @@ export default function Landing() {
   const [image, setImage] = useState('');
   const [imageData, setImageData] = useState();
   const [facts, setFacts] = useState(null);
+  const [imageFromEdamam, setImageFromEdamam] = useState('');
 
   //****************************************** */
 
@@ -19,10 +20,17 @@ export default function Landing() {
         image={image}
         setImage={setImage}
         setImageData={setImageData}
+        imageFromEdamam={imageFromEdamam}
+        setImageFromEdamam={setImageFromEdamam}
         setFacts={setFacts}
       />
 
-      <Card imageData={imageData} facts={facts} setFacts={setFacts} />
+      <Card
+        imageData={imageData}
+        imageFromEdamam={imageFromEdamam}
+        facts={facts}
+        setFacts={setFacts}
+      />
       <h2></h2>
       <h3></h3>
     </div>

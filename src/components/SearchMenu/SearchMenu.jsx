@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { getUnsplashData } from '../../services/apiServices';
 import nutritionApi from '../../services/NutritionApi';
+import nutritionApiImg from '../../services/NutritiousApiImg';
 
 export default function SearchMenu({
   image,
   setImage,
   setImageData,
   setFacts,
+  setImageFromEdamam,
 }) {
   const getImageData = async (image) => {
     try {
@@ -30,6 +32,8 @@ export default function SearchMenu({
     getImageData(image);
     const result = await nutritionApi(image);
     setFacts(result);
+    const setImageFromEdamamResult = nutritionApiImg(image);
+    setImageFromEdamam(setImageFromEdamamResult);
   };
 
   //*********************************************** */
