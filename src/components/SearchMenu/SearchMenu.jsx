@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import nutritionApi from '../../services/NutritionApi';
 import nutritionApiImg from '../../services/NutritiousApiImg';
 
