@@ -8,7 +8,7 @@ export default function Landing() {
   const [facts, setFacts] = useState(null);
   const [imageFromEdamam, setImageFromEdamam] = useState(null);
 
-  //****************************************** */
+  
 
   return (
     <div className="sectionContainer">
