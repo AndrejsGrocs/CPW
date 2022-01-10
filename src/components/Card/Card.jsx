@@ -6,7 +6,6 @@ import NutritionFacts from '../NutritionFacts/NutritionFacts';
 import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
 export default function Card({
-  imageData,
   facts,
   setFacts,
   imageFromEdamam,

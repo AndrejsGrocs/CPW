@@ -4,8 +4,7 @@ import Card from '../../components/Card/Card';
 import SearchMenu from '../../components/SearchMenu/SearchMenu';
 
 export default function Landing() {
-  const [image, setImage] = useState('');
-  const [imageData, setImageData] = useState();
+  const [searchInput, setSearchInput] = useState('');
   const [facts, setFacts] = useState(null);
   const [imageFromEdamam, setImageFromEdamam] = useState(null);
 
@@ -17,15 +16,13 @@ export default function Landing() {
       <Banner />
 
       <SearchMenu
-        image={image}
-        setImage={setImage}
-        setImageData={setImageData}
+        searchInput={searchInput}
+        setSearchInput={setSearchInput}
         setImageFromEdamam={setImageFromEdamam}
         setFacts={setFacts}
       />
 
       <Card
-        imageData={imageData}
         imageFromEdamam={imageFromEdamam}
         setImageFromEdamam={setImageFromEdamam}
         facts={facts}
