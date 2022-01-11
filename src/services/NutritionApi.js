@@ -7,10 +7,10 @@ async function nutritionApi(ingr) {
   const options = {
     method: 'GET',
     url: 'https://edamam-edamam-nutrition-analysis.p.rapidapi.com/api/nutrition-data',
-    params: { ingr: '1' + ingr },
+    params: { ingr: '1 ' + ingr },
     headers: {
       'x-rapidapi-host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
-      'x-rapidapi-key': 'be3edc6362msh395de5136f1c125p1e9d79jsn0e94ebe79825',
+      'x-rapidapi-key': '03de24f8eamsh7be555001c91a79p136cc2jsn5f884774cf23',
     },
   };
 

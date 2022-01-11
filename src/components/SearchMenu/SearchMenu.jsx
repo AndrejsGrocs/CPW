@@ -17,6 +17,7 @@ export default function SearchMenu({
       console.log("Can't get no Data from unplsplash-API", error.message);
     }
 
+
   //*********************************************** */
   const onChangeSearchInput = (e) => {
     console.log('e.target.value console-log', e.target.value);
