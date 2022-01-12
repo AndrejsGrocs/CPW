@@ -1,18 +1,21 @@
 .form-container {
   width: 40%;
   min-width: 300px;
-  margin: 0 auto;
+  margin: 30 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 3rem;
+  min-height: 40px;
+  padding: 50px 0;
   
   input[type=text],input[type=number] {
     margin-bottom: 1rem;
     width: 100%;
     font-size: 2.5rem;
     font-family: inherit;
+    height: 50px;
   }
   input[type=radio]{
     margin: 0 4rem 0 1rem;
@@ -21,14 +24,38 @@
     align-self: flex-start;
   }
   button {
-    font-size: 3rem;
-    border: none;
-    padding: 1.5rem;
-    background-color: rgb(70, 119, 255);
-    color: white;
-  }
-  button:hover {
     cursor: pointer;
-    background-color: rgb(48, 83, 177);
+    height: 50px;
+    width: 25%;
+    background-color: #EAC846;
+    font-weight: 700;
+    margin-top: 30px;
   }
+  .subcontainer{
+    margin-top: 50px;
+  }
+}
+#submitButton {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-shadow: 0px 0px #000000;
+    color:#678561 ;
+    border-radius: 5px;
+    min-width: 140px;
+    padding-bottom: 4.5rem;
+
+}
+
+.btn {
+  -webkit-text-fill-color: transparent !important;
+  transition: all 0.4s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  border: 3px solid #B4B579  !important;
+  box-shadow: #222 1px 0 10px;
 }
