@@ -8,16 +8,6 @@ export default function SearchMenu({
   setFacts,
   setImageFromEdamam,
 }) {
-  /*   const getImageData = async (searchInput) => {
-    try {
-      const data = await nutritionApiImg(searchInput);
-      console.log('Data from my getImageData-Function', data);
-      setImageFromEdamam(data);
-    } catch (error) {
-      console.log("Can't get no Data from unplsplash-API", error.message);
-    }
-
-
   //*********************************************** */
   const onChangeSearchInput = (e) => {
     console.log('e.target.value console-log', e.target.value);
@@ -26,13 +16,15 @@ export default function SearchMenu({
 
   //*********************************************** */
 
-  const onSubmitHandle = (e) => {
+  const onSubmitHandle = async (e) => {
     e.preventDefault();
-    const nutrtionApiResult = nutritionApi(searchInput);
+    const nutrtionApiResult = await nutritionApi(searchInput);
     setFacts(nutrtionApiResult);
-    const setImageFromEdamamResult = nutritionApiImg(searchInput);
+    const setImageFromEdamamResult = await nutritionApiImg(searchInput);
     setImageFromEdamam(setImageFromEdamamResult);
   };
+
+  //*********************************************** */
 
   return (
     <div>

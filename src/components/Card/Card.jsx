@@ -1,35 +1,20 @@
 import React from 'react';
-import picA from '../../assets/images/Nutrition_Ampel/A.png';
-import picB from '../../assets/images/Nutrition_Ampel/B.png';
-import nutritionApiImg from '../../services/NutritiousApiImg';
+
 import NutritionFacts from '../NutritionFacts/NutritionFacts';
-import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
-export default function Card({
-  facts,
-  setFacts,
-  imageFromEdamam,
-  setImageFromEdamam,
-}) {
-  const getImgFromEdamam = async () => {
-    const data = await nutritionApiImg();
-    setImageFromEdamam(data);
-    console.log('this is from getImgFromEdamam', data);
-  };
-
+export default function Card({ facts, setFacts, imageFromEdamam }) {
   return (
     <div>
       <figure className="image-block">
-        <h3>Your Product is</h3>
-        {/* <img
-          className="card-image"
-          src="https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg"
-        /> */}
+        <h3>
+          Your Product is <span></span>
+        </h3>
+
         <img
           className="card-image"
           src={
             imageFromEdamam
-              ? imageFromEdamam.image
+              ? imageFromEdamam.hints[1].food.image
               : 'https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg'
           }
         />
