@@ -1,6 +1,8 @@
 import picC from '../../assets/images/Nutrition_Ampel/C.png';
 import picB from '../../assets/images/Nutrition_Ampel/B.png';
 import picA from '../../assets/images/Nutrition_Ampel/A.png';
+import picD from '../../assets/images/Nutrition_Ampel/D.png';
+import picE from '../../assets/images/Nutrition_Ampel/E.png';
 
 export default function NutritiousAmpel({ facts }) {
   const nutriAmpFunction = () => {
