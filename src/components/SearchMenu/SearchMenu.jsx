@@ -27,19 +27,29 @@ export default function SearchMenu({
   //*********************************************** */
 
   return (
-    <div>
-      <form onSubmit={onSubmitHandle}>
-        <h2>Enter your Product</h2>
+    <form
+      onSubmit={onSubmitHandle}
+      className="container form-container mb-5 mt-5"
+    >
+      <div className="input-group input-group-lg d-flex justify-content-center align-items-center flex-column subcontainer">
         <input
-          className="input"
-          type="text"
           id="search"
-          placeholder="example: Search for 1 Apple"
-          onChange={onChangeSearchInput}
+          type="text"
+          className="form-control input w-100 shadow-lg p-3 mb-5 bg-body rounded"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          placeholder="Enter your food here"
+          onChange={onChangeImage}
         />
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+        <button
+          id="submitButton"
+          type="submit"
+          className="btn-lg btn"
+          onClick={onClickButton}
+        >
+          search
+        </button>
+      </div>
+    </form>
   );
 }

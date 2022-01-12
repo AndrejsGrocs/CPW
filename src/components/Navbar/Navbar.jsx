@@ -12,11 +12,6 @@ export default function Navbar() {
              <li> <NavLink to='/aboutus' exact activeClassName='active'>About Us</NavLink></li>
              {/* <li> <NavLink to='/cats/' exact activeClassName='active'>Cats</NavLink></li>
              <li> <NavLink to='/dogs' exact activeClassName='active'>Dogs</NavLink></li> */}
-             
-
-
-
-
          </ul>
 
 
