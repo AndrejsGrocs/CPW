@@ -1,19 +1,15 @@
+:root {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+}
+
 .landing-text {
   color: white;
   margin-bottom: 10%;
 }
 
-.banner {
-  color: white;
-  border: 2px solid white;
-  border-radius: 20%;
-  height: 30vh;
-  margin-bottom: 10%;
-}
-
-.input {
-  margin-bottom: 10%;
-  margin-top: 10%;
-  width: 60%;
-  height: 5vh;
+body {
+    background-color: #DFE8D6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
 }

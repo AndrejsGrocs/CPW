@@ -1,5 +1,8 @@
 @import 'bootstrap/scss/bootstrap';
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@400;600&family=Orbitron&display=swap');
+
+
 @import './reset';
 @import './body';
 @import './navbar';
@@ -7,9 +10,7 @@
 @import './form';
 @import './notFound';
 @import './sections';
-@import './cat';
 @import './selectButtons';
-@import './dog';
 @import './card';
-@import './teamCards';
 @import './BteamCards.scss';
+@import './banner.scss';

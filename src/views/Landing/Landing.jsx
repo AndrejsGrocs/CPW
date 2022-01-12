@@ -12,7 +12,6 @@ export default function Landing() {
 
   return (
     <div className="sectionContainer">
-      <h1 className="landing-text">Ananapp Pineapp Nutrify </h1>
       <Banner />
 
       <SearchMenu
@@ -23,8 +22,6 @@ export default function Landing() {
       />
 
       <Card imageData={imageData} facts={facts} setFacts={setFacts} />
-      <h2></h2>
-      <h3></h3>
     </div>
   );
 }
