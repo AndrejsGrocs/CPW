@@ -3,6 +3,11 @@ import ReactDOM from "react-dom";
 import fbPic from "../../assets/images/icons-social-media/FB.png";
 import twitterPic from "../../assets/images/icons-social-media/twitter.png";
 import mailPic from "../../assets/images/icons-social-media/mail.png";
+import PeonyPic from "../../assets/images/Profile pictures/Peony.jpeg";
+import RobinPic from "../../assets/images/Profile pictures/Robin.jpg";
+import RiccardoPic from "../../assets/images/Profile pictures/Riccardo.JPG";
+import AndrejsPic from "../../assets/images/Profile pictures/Andrey-Detochkin-scaled.jpg";
+import LukaszPic from "../../assets/images/Profile pictures/Lukasz Trzcinski.png";
 
 export default function BTeamCards() {
   return (
@@ -19,11 +24,7 @@ export default function BTeamCards() {
               alt="profile-sample1"
               class="background"
             />
-            <img
-              src="https://randomuser.me/api/portraits/women/20.jpg"
-              alt="profile-image"
-              class="profile"
-            />
+            <img src={PeonyPic} alt="profile-image" class="profile" />
             <div class="card-content">
               <h2>
                 Peony Langner<small>Tech Team</small>
@@ -69,11 +70,7 @@ export default function BTeamCards() {
               />
             </div>
             <div class="profile-thumb-block">
-              <img
-                src="https://randomuser.me/api/portraits/men/41.jpg"
-                alt="profile-image"
-                class="profile"
-              />
+              <img src={RobinPic} alt="profile-image" class="profile" />
             </div>
             <div class="card-content">
               <h2>
@@ -164,11 +161,7 @@ export default function BTeamCards() {
               />
             </div>
             <div class="profile-thumb-block">
-              <img
-                src="https://randomuser.me/api/portraits/men/41.jpg"
-                alt="profile-image"
-                class="profile"
-              />
+              <img src={RiccardoPic} alt="profile-image" class="profile" />
             </div>
             <div class="card-content">
               <h2>
@@ -211,11 +204,7 @@ export default function BTeamCards() {
               alt="profile-sample1"
               class="background"
             />
-            <img
-              src="https://randomuser.me/api/portraits/women/20.jpg"
-              alt="profile-image"
-              class="profile"
-            />
+            <img src={AndrejsPic} alt="profile-image" class="profile" />
             <div class="card-content">
               <h2>
                 Andrejs Grosc<small>Frontend</small>
@@ -259,15 +248,11 @@ export default function BTeamCards() {
               />
             </div>
             <div class="profile-thumb-block">
-              <img
-                src="https://randomuser.me/api/portraits/men/41.jpg"
-                alt="profile-image"
-                class="profile"
-              />
+              <img src={LukaszPic} alt="profile-image" class="profile" />
             </div>
             <div class="card-content">
               <h2>
-                Lukasz<small>Frontend</small>
+                Lukasz Trzcinski<small>Frontend</small>
               </h2>
               <div class="icon-block" display="flex">
                 <a href="#" style={{ width: "1.5rem" }}>
