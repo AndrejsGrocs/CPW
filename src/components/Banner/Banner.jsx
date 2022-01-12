@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '/home/user/Desktop/CPW/src/assets/images/Banner/Healfify no text.png'
+import banner from '/home/user/Desktop/CPW/src/assets/images/Banner/Healfify-no-text.png'
 
 export default function Banner() {
     return (
