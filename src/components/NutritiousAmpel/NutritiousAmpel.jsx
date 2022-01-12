@@ -21,8 +21,8 @@ export default function NutritiousAmpel({ facts, setFacts }) {
   // }, []);
 
   return (
-    <div>
-      <img style={{ width: '250px' }} src={nutriAmpFunction()} alt="" />
+    <div id="ampel">
+      <img src={nutriAmpFunction()} alt="" />
     </div>
   );
 }

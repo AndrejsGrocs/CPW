@@ -15,7 +15,7 @@ export default function NutritionFacts({ facts, setFacts }) {
   // }, []);
 
   return (
-    <div>
+    <div id='nFacts'>
       {!facts ? null : (
         <>
           <ul className="nutrition-facts">
@@ -28,8 +28,8 @@ export default function NutritionFacts({ facts, setFacts }) {
             <li>
               <h3>Fat:</h3>
               <p>
-                {facts.totalNutrients.FAT.quantity.toFixed(2)}
-                {facts.totalNutrients.FAT.unit}
+{/*                 {facts.totalNutrients.FAT.quantity.toFixed(2)}
+                {facts.totalNutrients.FAT.unit} */}
               </p>
             </li>
             <li>
