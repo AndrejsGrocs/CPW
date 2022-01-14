@@ -1,13 +1,21 @@
 import React from 'react';
-
 import NutritionFacts from '../NutritionFacts/NutritionFacts';
 
-export default function Card({ facts, setFacts, imageFromEdamam }) {
+export default function Card({
+  facts,
+  setFacts,
+  imageFromEdamam,
+  productTitle,
+}) {
   return (
     <div className="container mainCard">
       <figure className="image-block row p-5 m-3">
+        <h3>
+          Your Product is <span>{productTitle}</span>
+        </h3>
+
         <img
-          className="card-image col"
+          className="card-image"
           src={
             imageFromEdamam
               ? imageFromEdamam.hints[1].food.image

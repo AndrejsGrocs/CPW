@@ -1,11 +1,12 @@
 import nutritionApi from '../../services/NutritionApi';
-import nutritionApiImg from '../../services/NutritiousApiImg';
+import nutritionApiImg from '../../services/NutritionApiImg';
 
 export default function SearchMenu({
   searchInput,
   setSearchInput,
   setFacts,
   setImageFromEdamam,
+  setProductTitle,
 }) {
   //*********************************************** */
   const onChangeSearchInput = (e) => {
@@ -17,6 +18,7 @@ export default function SearchMenu({
 
   const onSubmitHandle = async (e) => {
     e.preventDefault();
+    setProductTitle(searchInput);
     const nutrtionApiResult = await nutritionApi(searchInput);
     setFacts(nutrtionApiResult);
     const setImageFromEdamamResult = await nutritionApiImg(searchInput);

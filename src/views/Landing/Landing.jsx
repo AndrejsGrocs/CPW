@@ -7,6 +7,7 @@ export default function Landing() {
   const [searchInput, setSearchInput] = useState('');
   const [facts, setFacts] = useState(null);
   const [imageFromEdamam, setImageFromEdamam] = useState(null);
+  const [productTitle, setProductTitle] = useState('');
 
   
 
@@ -19,6 +20,7 @@ export default function Landing() {
         setSearchInput={setSearchInput}
         setImageFromEdamam={setImageFromEdamam}
         setFacts={setFacts}
+        setProductTitle={setProductTitle}
       />
 
       <Card
@@ -26,6 +28,7 @@ export default function Landing() {
         setImageFromEdamam={setImageFromEdamam}
         facts={facts}
         setFacts={setFacts}
+        productTitle={productTitle}
       />
       <h2></h2>
       <h3></h3>
