@@ -1,19 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import nutritionApi from '../../services/NutritionApi';
 import NutritiousAmpel from '../NutritiousAmpel/NutritiousAmpel';
 
 export default function NutritionFacts({ facts, setFacts }) {
-  const getNutritionData = async () => {
-    const data = await nutritionApi();
-    setFacts(data);
-    console.log(data);
-  };
-
-  //* we need this useEffect one to load the data - it is called everytime a component renders
-  // useEffect(() => {
-  //   getNutritionData();
-  // }, []);
-
   return (
     <div id='nFacts'>
       {!facts ? null : (
@@ -41,7 +29,7 @@ export default function NutritionFacts({ facts, setFacts }) {
             </li>
             <li>
               <h3>Proteine:</h3>
-              {facts.totalNutrients.PROCNT.quantity}
+              {facts.totalNutrients.PROCNT.quantity.toFixed(2)}
               {facts.totalNutrients.FAT.unit}
             </li>
           </ul>
