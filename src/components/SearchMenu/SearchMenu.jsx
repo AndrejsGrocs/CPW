@@ -28,6 +28,7 @@ export default function SearchMenu({
   //*********************************************** */
 
   return (
+
     <form
       onSubmit={onSubmitHandle}
       className="container form-container mb-5 mt-5"
@@ -47,5 +48,6 @@ export default function SearchMenu({
         </button>
       </div>
     </form>
+
   );
 }
