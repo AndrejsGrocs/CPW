@@ -7,6 +7,7 @@ export default function Card({
   imageFromEdamam,
   productTitle,
 }) {
+  console.log(imageFromEdamam);
   return (
     <div className="container mainCard">
       <figure className="image-block row p-5 m-3">
@@ -15,10 +16,10 @@ export default function Card({
         </h3>
 
         <img
-          className="card-image"
+          className="card-image col"
           src={
             imageFromEdamam
-              ? imageFromEdamam.hints[1].food.image
+              ? imageFromEdamam.hints[0].food.image
               : 'https://www.frischeparadies-shop.de/media/image/0d/5c/66/OS_20122_1_Ananas.jpg'
           }
         />

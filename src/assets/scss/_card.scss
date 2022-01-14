@@ -2,43 +2,42 @@
   margin-bottom: 100px;
   min-height: 40vh;
 
-
-.card-image {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  max-width: 350px;
-  height: auto;
-}
-
-.image-block {
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: rgb(65, 191, 196);
-}
-
-.rating-image {
-  margin-top: 30px;
-  width: 100%;
-  height: 100%;
-}
-
-.nutrition-facts {
-  margin-top: 15px;
-  list-style-type: none;
-}
-.variable-text{
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 1px;
-}
-
-}
-
-#nFacts{
-    background-color: rgb(8, 5, 1);
+  .card-image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 350px;
+    height: auto;
   }
 
+  .image-block {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(65, 191, 196);
+  }
 
-#ampel{
-  max-width: 250px;
-  border: solid 3px red;
+  .rating-image {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nutrition-facts {
+    margin-top: 15px;
+    list-style-type: none;
+  }
+  .variable-text {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+  }
+}
+
+#nFacts {
+  background-color: rgb(8, 5, 1);
+}
+
+#ampel {
+  img {
+    max-width: 250px;
+  }
+  // border: solid 3px red;
 }
