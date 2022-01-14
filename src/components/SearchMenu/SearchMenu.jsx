@@ -40,14 +40,9 @@ export default function SearchMenu({
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-lg"
           placeholder="Enter your food here"
-          onChange={onChangeImage}
+          onChange={onChangeSearchInput}
         />
-        <button
-          id="submitButton"
-          type="submit"
-          className="btn-lg btn"
-          onClick={onClickButton}
-        >
+        <button id="submitButton" type="submit" className="btn-lg btn">
           search
         </button>
       </div>
