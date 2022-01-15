@@ -32,10 +32,11 @@ h1 span {
   color: rgb(46, 131, 134);
 }
 h1 a {
-  color: #131313;
   font-weight: bold;
 }
-
+a {
+  cursor: pointer;
+}
 /*Profile Card 1*/
 .profile-card-1 {
   font-family: "Open Sans", Arial, sans-serif;
@@ -49,13 +50,12 @@ h1 a {
   border: none;
 }
 .profile-card-1 .background {
-  width: 100%;
   vertical-align: top;
   opacity: 0.9;
   -webkit-filter: blur(5px);
   filter: blur(0px);
   -webkit-transform: scale(1.8);
-  transform: scale(2.8);
+  // transform: scale(2.8);
 }
 .profile-card-1 .card-content {
   width: 100%;
@@ -69,7 +69,6 @@ h1 a {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  max-width: 100px;
   opacity: 1;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -92,8 +91,7 @@ h1 a {
   color: #ffffff;
   text-align: center;
   border: 1px solid #fff;
-  width: 30px;
-  height: 30px;
+
   line-height: 30px;
   border-radius: 50%;
   margin: 0 5px;
@@ -167,7 +165,6 @@ h1 a {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  max-width: 100px;
   opacity: 1;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -191,8 +188,8 @@ h1 a {
   color: #232323;
   text-align: center;
   border: 1px solid #232323;
-  width: 30px;
-  height: 30px;
+  // width: 30px;
+  // height: 30px;
   line-height: 30px;
   border-radius: 50%;
   margin: 0 5px;
@@ -201,12 +198,52 @@ h1 a {
   float: left;
   width: 100%;
   margin-top: 15px;
+  
 }
 .profile-card-3 .icon-block a {
   text-decoration: none;
+  width: 2rem;
 }
 .profile-card-3 i:hover {
   background-color: #232323;
   color: #fff;
   text-decoration: none;
+}
+//! from other file *riccardo
+.teamCardsContainer {
+  width: 100%;
+  padding: 8rem 8rem;
+  color: black;
+  background: linear-gradient(#EED485 10%, #678561);
+  height: 100%;
+  z-index: 300;
+}
+//?
+.backCard3 {
+  width: auto;
+  object-fit: cover;
+}
+.profile {
+  width: 150px;
+  height: 150px;
+}
+.backCard1 {
+  height: 100%;
+  object-fit:fill;
+  width: auto;
+
+}
+.backFondo {
+  background-image: url('../../assets/images/Banner/Healfify-no-text.png');
+  height: 100%;
+}
+.backFondo2 {
+  background-image: url('../../assets/images/Banner/Healfify-no-text.png');
+  background-position: right bottom;
+  height: 100%;
+}
+.backFondo3 {
+  background-image: url('../../assets/images/Banner/Healfify-no-text.png');
+  background-position: left bottom;
+  height: 100%;
 }
