@@ -19,8 +19,8 @@ export default function Card({
       </span>
       </h3>
         <img 
-        style={{borderColor: facts ? facts.calories <= 150 ? '#678561' : facts.calories <= 250 ? '#B4B579' : facts.calories <= 350 ?  '#EAC846' : facts.calories <= 400 ? '#E09874' : facts.calories <= 500 ? '#C6654E' : 'grey' : ''}} 
-        alt='supposed to be a food image'
+        style={{borderColor: facts ? facts.calories <= 150 ? '#678561' : facts.calories <= 250 ? '#B4B579' : facts.calories <= 350 ?  '#EAC846' : facts.calories >= 400 ? '#E09874' : facts.calories >= 500 ? '#C6654E' : '#DFE8D6' : ''}} 
+        alt='i am supposed to be a food picture'
           className="card-image m-5 foodPic"
           src={
             imageFromEdamam

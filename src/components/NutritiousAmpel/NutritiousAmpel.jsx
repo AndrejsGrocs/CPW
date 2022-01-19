@@ -32,7 +32,7 @@ export default function NutritiousAmpel({ facts }) {
 
     <div id="ampel"
      className='p-2' 
-     style={{backgroundColor: facts.calories <= 150 ? '#678561' : facts.calories <= 250 ? '#B4B579' : facts.calories <= 350 ?  '#EAC846' : facts.calories <= 400 ? '#E09874' : facts.calories <= 500 ? '#C6654E' : 'grey'}}>
+     style={{backgroundColor: facts.calories <= 150 ? '#678561' : facts.calories <= 250 ? '#B4B579' : facts.calories <= 350 ?  '#EAC846' : facts.calories >= 400 ? '#E09874' : facts.calories >= 500 ? '#C6654E' : '#DFE8D6'}}>
       <img 
       src={nutriAmpFunction()} 
       alt="nutritional-traffic-light" />
