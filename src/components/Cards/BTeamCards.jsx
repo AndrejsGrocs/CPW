@@ -41,7 +41,7 @@ export default function BTeamCards() {
               <div className="icon-block">
                 <a href="linkedin.com/in/robin-skladny-647a1b229" target="_blank">
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}
@@ -80,7 +80,7 @@ export default function BTeamCards() {
               <div className="icon-block" target="_blank">
                 <a href="https://de.linkedin.com/in/peony-langner-6808b218a" style={{ width: "1.5rem" }}>
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}
@@ -129,7 +129,7 @@ export default function BTeamCards() {
               <div className="icon-block">
                 <a href="https://www.linkedin.com/in/andrejs-grocs-andrey-detochkin-ab2106141" target="_blank">
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}
@@ -168,7 +168,7 @@ export default function BTeamCards() {
               <div className="icon-block">
                 <a href="https://www.linkedin.com/in/riccardo-limiti-a81061226/" style={{ width: "1.5rem" }} target="_blank">
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}
@@ -218,7 +218,7 @@ export default function BTeamCards() {
               <div className="icon-block">
                 <a href="https://www.linkedin.com/in/lars-nemeth-a2b28ab4/" target="_blank">
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}
@@ -258,7 +258,7 @@ export default function BTeamCards() {
               <div className="icon-block">
                 <a href="www.linkedin.com/in/lukasz-trzcinski-berlin" style={{ width: "1.5rem" }} target="_blank">
                   <img
-                    className="icons m-2"
+                    className="icons m-2 rounded"
                     src={ldin}
                     alt="linkedin"
                     style={{ width: "30px" }}

@@ -1,19 +1,25 @@
 .mainCard {
   margin-bottom: 100px;
   min-height: 40vh;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  background-color: #B4B579;
 
+  .listA{
+      color: rgba(0, 0, 0, 0.808);
+    h3{
+      font-weight: 600;
+    }
+  }
 
   .card-image {
     margin-top: 15px;
     margin-bottom: 15px;
-    max-width: 350px;
-    height: auto;
   }
 
   .image-block {
     padding-left: 10px;
     padding-right: 10px;
-    background-color: rgb(65, 191, 196);
+    background-color: #B4B579;
   }
 
   .rating-image {
@@ -33,25 +39,139 @@
 
 }
 
-
-
-#nFacts {
-  background-color: rgb(8, 5, 1);
+.foodPic{
+  border-radius: 25%;
+  width: 290px;
+  height: 290px;
+  object-fit:cover;
+  box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.5);
+  border: 22px solid white;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-self: center;
 }
+
 .variable-text{
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 1px;
+    font-size: 3rem;
 }
 
+.titleProd {
+    color: black;
+    background-color: #DFE8D6;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+#nFacts{
+  .nutrition-facts {
+    padding-left: 0px;
+  }
+  
+  li{
+    color: rgba(0, 0, 0, 0.808);
+    background-color: #DFE8D6;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+  }
+  .inlineCategory {
+    display: inline-block;
+  }
+}
 
 #ampel {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    background-color: aqua;
   img {
-    max-width: 250px;
+    max-width: 320px;
   }
-  // border: solid 3px red;
-
 }
 
+.subP{
+background-image: url('../../assets/images/Banner/Healfify-no-text.png');
+border-radius: 25px;
+opacity: 0.9;
+}
 
+@media (max-width: 576px){
+.subP {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.foodPic{
+  margin: 0;
+  padding: 0;
+  border: 15px solid white;
+
+}
+#ampel {
+  img {
+    max-width: 180px;
+  }
+}
+}
+
+@media (max-width: 1200px){
+  .listA {
+  margin-top: 30px;
+}
+}
+
+ @media (min-width: 992px) {
+  .subP{
+  margin-right: 20px;
+  }
+  .listA{
+    margin-left: 20px;
+  }
+  .foodPic {
+    height: 400px;
+    width: 400px;
+    border: 25px solid white;
+
+  }
+  #ampel {
+  img {
+    max-width: 380px;
+  }
+}
+
+} 
+
+
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
 
 
