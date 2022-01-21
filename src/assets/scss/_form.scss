@@ -1,7 +1,7 @@
 .form-container {
   width: 40%;
   min-width: 300px;
-  margin: 30 auto;
+  margin:50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,7 @@
   font-size: 3rem;
   min-height: 40px;
   padding: 50px 0;
+  height: 30vh;
   
   input[type=text],input[type=number] {
     margin-bottom: 1rem;
