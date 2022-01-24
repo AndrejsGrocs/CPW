@@ -9,8 +9,6 @@ export default function Landing() {
   const [imageFromEdamam, setImageFromEdamam] = useState(null);
   const [productTitle, setProductTitle] = useState('');
 
-  
-
   return (
     <div className="sectionContainer">
       <Banner />
@@ -23,7 +21,6 @@ export default function Landing() {
         setProductTitle={setProductTitle}
       />
 
-
       <Card
         imageFromEdamam={imageFromEdamam}
         setImageFromEdamam={setImageFromEdamam}
@@ -33,7 +30,6 @@ export default function Landing() {
       />
       <h2></h2>
       <h3></h3>
-
     </div>
   );
 }
