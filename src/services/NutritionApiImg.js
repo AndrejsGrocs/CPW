@@ -17,7 +17,7 @@ async function nutritionApiImg(ingr) {
   console.log('my options from NutritionApiImg', options);
 
   const response = await axios(options);
-  console.log(response.data.hints[0].food.image);
+  // console.log(response.data.hints[0].food.image);
   return response.data;
 }
 
