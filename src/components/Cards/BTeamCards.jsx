@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import mailPic from "../../assets/images/icons-social-media/mail.png";
-import RobinPic from "../../assets/images/Profile pictures/Robin_new.jpg";
+import RobinPic from "../../assets/images/Profile pictures/Robin_fit_pic.png";
 import banner from "../../assets/images/Banner/Healfify-no-text.png";
 import PeonyPic from "../../assets/images/Profile pictures/Peony.jpeg";
 import Andrej from "../../assets/images/Profile pictures/Andrey-Detochkin-scaled.jpg";
@@ -42,41 +42,22 @@ export default function BTeamCards() {
                 style={{ width: "30px" }}
               />
             </a>
-
-            <div className="card-content">
-              <h2>
-                Robin Skladny<small>Frontend Team</small>
-              </h2>
-              <div className="icon-block">
-                <a
-                  href="linkedin.com/in/robin-skladny-647a1b229"
-                  target="_blank"
-                >
-                  <img
-                    className="icons m-2 rounded"
-                    src={ldin}
-                    alt="linkedin"
-                    style={{ width: "30px" }}
-                  />
-                </a>
-                <a href=" https://github.com/Robynio" target="_blank">
-                  <img
-                    className="icons m-2"
-                    src={git}
-                    alt="gitHub"
-                    style={{ width: "30px" }}
-                  />
-                </a>
-                <a href="mailto:robin_skladny@gmx.de">
-                  <img
-                    className="icons m-1"
-                    src={mailPic}
-                    alt="email"
-                    style={{ width: "30px" }}
-                  />
-                </a>
-              </div>
-            </div>
+            <a href=" https://github.com/Robynio" target="_blank">
+              <img
+                className="icons m-2"
+                src={git}
+                alt="gitHub"
+                style={{ width: "30px" }}
+              />
+            </a>
+            <a href="mailto:robin_skladny@gmx.de">
+              <img
+                className="icons m-1"
+                src={mailPic}
+                alt="email"
+                style={{ width: "30px" }}
+              />
+            </a>
           </div>
 
           <div
