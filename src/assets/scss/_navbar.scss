@@ -5,12 +5,14 @@
   max-height: 70px;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #EAC846;
   align-items: center;
- 
+  /* box-shadow:10px 0px 30px rgb(0, 0, 0); */
   z-index: 1000;
 }
+
+
 
 .nav-list {
   list-style: none;
