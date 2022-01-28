@@ -1,5 +1,4 @@
 import React from 'react';
-require('dotenv').config();
 
 async function nutritionApi(ingr) {
   const axios = require('axios').default;
@@ -10,7 +9,7 @@ async function nutritionApi(ingr) {
     params: { ingr: '1 ' + ingr },
     headers: {
       'x-rapidapi-host': 'edamam-edamam-nutrition-analysis.p.rapidapi.com',
-      'x-rapidapi-key': '03de24f8eamsh7be555001c91a79p136cc2jsn5f884774cf23',
+      'x-rapidapi-key': process.env.REACT_APP_API_KEY,
     },
   };
 
