@@ -121,7 +121,7 @@ export default function BTeamCards() {
 
             <div className="card-content">
               <h2>
-                Andrej Grocs<small>Frontend/Backend</small>
+                Andrejs Grocs<small>Frontend/Backend</small>
               </h2>
               <div className="icon-block">
                 <a
