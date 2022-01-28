@@ -4,7 +4,8 @@
   "description": "This is a demo to use react router dom.",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "author": "Andrejs Grocs",
   "license": "ISC",
@@ -26,6 +27,7 @@
     "react-scripts": "^4.0.3",
     "sass": "^1.44.0",
     "scripts": "^0.1.0"
+    
   },
   "browserslist": {
     "production": [
