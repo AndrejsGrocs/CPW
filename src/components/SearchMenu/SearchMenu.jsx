@@ -10,6 +10,7 @@ export default function SearchMenu({
 }) {
   //*********************************************** */
   const onChangeSearchInput = (e) => {
+    e.preventDefault();
     console.log('e.target.value console-log', e.target.value);
     return setSearchInput(e.target.value);
   };
@@ -28,7 +29,6 @@ export default function SearchMenu({
   //*********************************************** */
 
   return (
-
     <form
       onSubmit={onSubmitHandle}
       className="container form-container mb-5 mt-5"
@@ -48,6 +48,5 @@ export default function SearchMenu({
         </button>
       </div>
     </form>
-
   );
 }
