@@ -49,5 +49,5 @@ Lukasz Trzcinski - Frontend Team : [Linked In](https://www.linkedin.com/in/lukas
 
 
 **Big Special Thanks to Natalia Maca for help in design.**</br>
-**and to DCI teachers: Franco Speziali, Gilles Vanhaecke and Sebastian Salas Laurens for consultating us during this wonderful project.**
+**and to DCI teachers: Franco Speziali, Gilles Vanhaecke, and Sebastian Salas Laurens for consulting us during this wonderful project.**
 
