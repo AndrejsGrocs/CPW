@@ -9,6 +9,9 @@
 
 ## Project description
 
+
+**The website can crash during the sessions, because search amount is limited from API provider**
+
 ```
 This is a website where you can enter any food or product name
 and get the nutrition data about it.
@@ -31,13 +34,20 @@ during the final modules of the studying process in
 ```
 **Team members**
 
-```
-Robin Skladny :
-Peony Langner :
-Andrejs Grocs :
-Riccardo Limiti :
-Lars Nemeth :
-Lukasz Trzcinski :
+Peony Langner - Backend Team :  [Linked In](https://www.linkedin.com/in/peony-langner-6808b218a/)</br>
+
+Robin Skladny - Frontend Team : [Linked In](https://www.linkedin.com/in/robin-skladny-647a1b229/)</br>
 
 
-```
+Andrejs Grocs - Frontend/Backend : [Linked In](https://www.linkedin.com/in/andrejs-grocs-andrey-detochkin-ab2106141) </br>
+
+Riccardo Limiti - Designer : [Linked In](https://www.linkedin.com/in/riccardo-limiti-a81061226/) </br>
+
+Lars Nemeth - Backend Team :  [Linked In](https://www.linkedin.com/in/lars-nemeth-a2b28ab4/)</br>
+
+Lukasz Trzcinski - Frontend Team : [Linked In](https://www.linkedin.com/in/lukasz-trzcinski-berlin/) </br>
+
+
+**Big Special Thanks to Natalia Maca for help in design.**</br>
+**and to DCI teachers: Franco Speziali, Gilles Vanhaecke and Sebastian Salas Laurens for consultating us during this wonderful project.**
+
