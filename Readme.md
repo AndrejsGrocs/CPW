@@ -48,6 +48,7 @@ Lars Nemeth - Backend Team :  [Linked In](https://www.linkedin.com/in/lars-nemet
 Lukasz Trzcinski - Frontend Team : [Linked In](https://www.linkedin.com/in/lukasz-trzcinski-berlin/) </br>
 
 
+## :raised_hands: :pray: 
 **Big Special Thanks to Natalia Maca for help in design.**</br>
 **and to DCI teachers: Franco Speziali, Gilles Vanhaecke, and Sebastian Salas Laurens for consulting us during this wonderful project.**
 
