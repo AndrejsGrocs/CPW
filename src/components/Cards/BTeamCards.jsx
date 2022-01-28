@@ -34,7 +34,7 @@ export default function BTeamCards() {
             Robin Skladny<small>Frontend Team</small>
           </h2>
           <div className="icon-block">
-            <a href="linkedin.com/in/robin-skladny-647a1b229" target="_blank">
+            <a href="https://de.linkedin.com/in/robin-skladny-647a1b229" target="_blank">
               <img
                 className="icons m-2"
                 src={ldin}
