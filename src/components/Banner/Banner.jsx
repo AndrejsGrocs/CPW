@@ -8,8 +8,8 @@ export default function Banner() {
         <img src={banner} className="card-img banner-picture" alt="CPW-banner" />
         <div className="card-img-overlay container d-flex justify-content-center align-bottom flex-column mt-5 bannerBox">
         <h1 className="card-title text-dark banner-text vibrate-1">healify</h1>
-        <p className="card-text fs-1">The App everybody need to get the right nutritional values!</p>
-        <p className="card-text fs-1">This application helps you to get detailed information about the food products so you can be prepared for gym, workout, and diet procedures.</p>
+        <p className="card-text fs-1">The App you need to plan your diet right! </p>
+        <p className="card-text fs-1">This application provides you with the detailed nutrition facts about your food to achieve the aims you want: workout, diet, healthy lifestyle!</p>
         </div>
         </div>
         </div>
