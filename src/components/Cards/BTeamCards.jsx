@@ -491,7 +491,7 @@ export default function BTeamCards() {
           </h2>
           <div className="icon-block">
             <a
-              href="www.linkedin.com/in/lukasz-trzcinski-berlin"
+              href="https://www.linkedin.com/in/lukasz-trzcinski-berlin"
               style={{ width: "1.5rem" }}
               target="_blank"
             >
